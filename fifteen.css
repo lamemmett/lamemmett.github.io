@@ -20,6 +20,7 @@ body, button {
 	height: 90px;
 	position: absolute;
 	width: 90px;
+	transition: border 0.5s, color 0.5s;
 }
 
 #puzzlearea {
