@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+}
+
+/*Navigation bar styling*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar img {
+  width: 350px;
+  padding: 1.5%;
+}
+
+.navbar ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: flex-end;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #7777FF;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.navbar a:hover {
+  color: #7FAAFF;
+}
