@@ -32,6 +32,8 @@ a, a:hover, a:focus, a:visited {
 	padding: 0;
 	background: #5BB670;
 	color: #FFFFFF;
+	/* Fix bootstrap column height fill issue */
+	padding-bottom: 100%;
 }
 
 .main-wrapper {
