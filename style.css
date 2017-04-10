@@ -101,6 +101,11 @@ a, a:hover, a:focus, a:visited {
 	font-size: 30px;
 }
 
+.download-text {
+	vertical-align: middle;
+	font-size: 16px;
+}
+
 .download-button:hover, .download-button:focus {
 	color: #888888;
 	cursor: pointer;
