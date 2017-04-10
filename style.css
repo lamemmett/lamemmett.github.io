@@ -2,14 +2,20 @@ body {
 	background: #DDDDDD;
 	font-family: 'Roboto', sans-serif; 
 	margin-top: 50px;
-	padding: 30px;
+	padding-bottom: 50px;
 	-webkit-font-smoothing: antialiased;
 }
 
+/* Remove default link styling */
 a, a:hover, a:focus, a:visited {
 	color: #FFFFFF;
 }
 
+.logo {
+	padding-right: 30px;
+}
+
+/* Define main content areas */
 .wrapper {
 	background: #FFFFFF;
 	max-width: 1000px;
@@ -20,23 +26,65 @@ a, a:hover, a:focus, a:visited {
 	box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.sidebar-wrapper {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #5BB670;
+	color: #FFFFFF;
+}
+
 .main-wrapper {
 	margin: 0;
 	padding: 60px;
 }
 
-.sidebar-wrapper {
-	margin: 0;
-	padding: 0;
+/* Sidebar content */
+.sidebar-wrapper .name {
+	font-size: 32px;
+	font-weight: 900;
+}
+
+.sidebar-wrapper .title {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.profile-container {
 	background: #49925A;
-	color: #FFFFFF;
+	padding: 30px;
+	text-align: center;
+}
+
+.contact-container {
+	background: #5BB670;
+	padding: 30px;
+}
+
+.contact-container .contact-list {
+	padding: 0;
+	margin: auto;
+    list-style: none;
+}
+
+.sidebar-wrapper .contact-list .fa {
+	margin-right: 5px;
+}
+
+.contact-container .contact-list li {
+	margin-bottom: 10px;
+}
+
+/* Main content */
+.section {
+	margin-bottom: 20px;
 }
 
 .section-title {
 	color: #49925A;
 	font-size: 20px;
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .main-wrapper .download-button {
@@ -60,44 +108,41 @@ a, a:hover, a:focus, a:visited {
 	-webkit-border-radius: 50%;
     -moz-border-radius: 50%;
 	border-radius: 50%;
-	margin-right: 8px;
-	padding-top: 7px;
+	margin-right: 16px;
+	padding-top: 8px;
 	text-align: center;
 	font-size: 16px;
 	color: #FFFFFF;
 	background: #49925A;
 }
 
-.profile-container {
-	padding: 30px;
-	text-align: center;
+/* Job descriptions */
+.job {
+	margin-bottom: 30px;
+}
+.job .job-title {
+	font-size: 18px;
+	color: #3F4650;
+	font-weight: 500;
 }
 
-.sidebar-wrapper .name {
-	font-size: 32px;
-	font-weight: 900;
-}
-
-.sidebar-wrapper .title {
-	font-size: 20px;
+.job-title .job-time {
+	color: #97AAC3;
 	font-weight: 400;
+	font-size: 18px;
+	float: right;
+	position: relative;
+	right: 0;
+	top: 0;
 }
 
-.contact-container {
-	background: #5BB670;
-	padding: 30px;
-}
-
-.contact-container .contact-list {
-	padding: 0;
-	margin: auto;
-    list-style: none;
-}
-
-.sidebar-wrapper .contact-list .fa {
-	margin-right: 5px;
-}
-
-.contact-container .contact-list li {
+.job .job-company {
+	color: #97AAC3;
+	font-size: 16px;
+	font-weight: 400;
 	margin-bottom: 10px;
+}
+
+.job .job-description {
+	font-size: 14px;
 }
