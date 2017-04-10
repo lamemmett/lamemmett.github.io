@@ -12,6 +12,10 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		
+		<!-- Fonts -->
+		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+		
 		<!-- Page-specific styling -->
 		<link rel="stylesheet" href="style.css">
 		
@@ -22,6 +26,7 @@
 	</head>
 
 	<body>
+		<!-- Navbar -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -34,9 +39,10 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#intro">Profile</a></li>
-						<li><a href="#resume">Resume</a></li>
+						<li class="active"><a href="#profile">Profile</a></li>
 						<li><a href="#experience">Experience</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#projects">Projects</a></li>
 					</ul>
 				</div>
 			</div>
@@ -44,6 +50,8 @@
 		
 		<!-- Main content wrapper -->
 		<div class="container wrapper">
+		
+			<!-- Sidebar Content -->
 			<div class="col-sm-4 sidebar-wrapper ">
 				<div class="profile-container">
 					<img class="profile" src="assets/profile.png">
@@ -53,25 +61,54 @@
 				<div class="contact-container">
 					<ul class="contact-list">
 						<li>
-							<i class="icon-envelope"></i>
+							<i class="fa fa-envelope"></i>
 							<a href="mailto:lam.emmett@gmail.com">lam.emmett@gmail.com</a>
 						</li>
 						<li>
-							<i class="icon-phone"></i>
+							<i class="fa fa-phone"></i>
 							<a href="tel:14252867699">(425) 286-7699</a>
 						</li>
 						<li>
-							<i class="icon-linkedin"></i>
-							<a href="linkedin.com/in/emmettlam">linkedin.com/in/emmettlam</a>
+							<i class="fa fa-linkedin"></i>
+							<a href="https://www.linkedin.com/in/emmettlam/">linkedin.com/in/emmettlam</a>
 						</li>
 						<li>
-							<i class="icon-github"></i>
-							<a href="github.com/lamemmett">github.com/lamemmett</a>
+							<i class="fa fa-github"></i>
+							<a href="https://github.com/lamemmett">github.com/lamemmett</a>
+						</li>
+						<li>
+							<i class="fa fa-facebook-square"></i>
+							<a href="https://www.facebook.com/emmett.lam.7">facebook.com/emmett.lam.7</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-8 main-wrapper">Main</div>
+			
+			<!-- Main column content -->
+			<div class="col-sm-8 main-wrapper">
+				<div class="download-button">
+					<i class="fa fa-file-text-o"></i>
+				</div>
+				<div id="profile" class="section-title">
+					<i class="fa fa-user"></i>
+					CAREER PROFILE
+				</div>
+				
+				<div id="experience" class="section-title">
+					<i class="fa fa-briefcase"></i>
+					EXPERIENCE
+				</div>
+				
+				<div id="skills" class="section-title">
+					<i class="fa fa-bar-chart"></i>
+					SKILLS
+				</div>
+				
+				<div id="projects"class="section-title">
+					<i class="fa fa-keyboard-o"></i>
+					PROJECTS
+				</div>
+			</div>
 		</div>
 		
 		<!-- jQuery files -->

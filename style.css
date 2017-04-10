@@ -1,16 +1,17 @@
 body {
 	background: #DDDDDD;
+	font-family: 'Roboto', sans-serif; 
 	margin-top: 50px;
 	padding: 30px;
 	-webkit-font-smoothing: antialiased;
 }
 
 a, a:hover, a:focus, a:visited {
-	color: #ffffff;
+	color: #FFFFFF;
 }
 
 .wrapper {
-	background: white;
+	background: #FFFFFF;
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0;
@@ -21,13 +22,50 @@ a, a:hover, a:focus, a:visited {
 
 .main-wrapper {
 	margin: 0;
+	padding: 60px;
 }
 
 .sidebar-wrapper {
 	margin: 0;
 	padding: 0;
 	background: #49925A;
-	color: #ffffff;
+	color: #FFFFFF;
+}
+
+.section-title {
+	color: #49925A;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.main-wrapper .download-button {
+	padding-top: 10px;
+	padding-right: 15px;
+	position: absolute;
+	color: #AAAAAA;
+	top: 0;
+	right: 0;
+	font-size: 30px;
+}
+
+.main-wrapper .download-button:hover {
+	color: #888888;
+	cursor: pointer;
+}
+
+.main-wrapper .section-title .fa {
+	height: 30px;
+	width: 30px;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+	border-radius: 50%;
+	margin-right: 8px;
+	padding-top: 7px;
+	text-align: center;
+	font-size: 16px;
+	color: #FFFFFF;
+	background: #49925A;
 }
 
 .profile-container {
@@ -36,12 +74,12 @@ a, a:hover, a:focus, a:visited {
 }
 
 .sidebar-wrapper .name {
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 32px;
+	font-weight: 900;
 }
 
 .sidebar-wrapper .title {
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 400;
 }
 
@@ -56,22 +94,10 @@ a, a:hover, a:focus, a:visited {
     list-style: none;
 }
 
+.sidebar-wrapper .contact-list .fa {
+	margin-right: 5px;
+}
+
 .contact-container .contact-list li {
 	margin-bottom: 10px;
-}
-	
-.icon-envelope:before {
-	content: "\f0e0";
-}
-
-.icon-phone:before {
-	content: "\f095";
-}
-
-.icon-linkedin:before {
-	content: "\f0e1";
-}
-
-.icon-github:before {
-	content: "\f09b";
 }
