@@ -11,8 +11,10 @@ a, a:hover, a:focus, a:visited {
 	color: #FFFFFF;
 }
 
-.logo {
-	padding-right: 30px;
+.hidden-anchor {
+	display: block;
+    padding-top: 60px;
+    margin-top: -60px;
 }
 
 /* Define main content areas */
@@ -99,7 +101,7 @@ a, a:hover, a:focus, a:visited {
 	font-size: 30px;
 }
 
-.main-wrapper .download-button:hover {
+.download-button:hover, .download-button:focus {
 	color: #888888;
 	cursor: pointer;
 }

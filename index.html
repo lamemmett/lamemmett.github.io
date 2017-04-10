@@ -26,6 +26,7 @@
 	</head>
 
 	<body>
+		<a class="hidden-anchor" id="top"></a>
 		<!-- Navbar -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -39,7 +40,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#profile">Profile</a></li>
+						<li class="active"><a href="#top">Profile</a></li>
 						<li><a href="#experience">Experience</a></li>
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#projects">Projects</a></li>
@@ -54,7 +55,7 @@
 			<!-- Sidebar Content -->
 			<div class="col-sm-4 sidebar-wrapper ">
 				<div class="profile-container">
-					<img class="profile" src="assets/profile.png">
+					<img class="profile-pic" src="assets/profile.png">
 					<h1 class="name">Emmett Lam</h1>
 					<h3 class="title">Embedded Software Engineer</h3>
 				</div>
@@ -90,14 +91,15 @@
 					<i class="fa fa-file-text-o"></i>
 				</div>
 				<div class="section">
-					<div id="profile" class="section-title">
+					<div class="section-title">
 						<i class="fa fa-user"></i>PROFILE
 					</div>
 				</div>
 				
 				
 				<div class="section">
-					<div id="experience" class="section-title">
+					<a class="hidden-anchor" id="experience"></a>
+					<div  class="section-title">
 						<i class="fa fa-briefcase"></i>EXPERIENCE
 					</div>
 					<div class="job">
@@ -150,14 +152,16 @@
 				
 				
 				<div class="section">
-					<div id="skills" class="section-title">
+					<a class="hidden-anchor" id="skills"></a>
+					<div class="section-title">
 						<i class="fa fa-keyboard-o"></i>SKILLS
 					</div>
 				</div>
 				
 				
 				<div class="section">
-					<div id="projects"class="section-title">
+					<a class="hidden-anchor" id="projects"></a>
+					<div class="section-title">
 						<i class="fa fa-flask"></i>PROJECTS
 					</div>
 				</div>
