@@ -1,0 +1,77 @@
+body {
+	background: #DDDDDD;
+	margin-top: 50px;
+	padding: 30px;
+	-webkit-font-smoothing: antialiased;
+}
+
+a, a:hover {
+	color: #ffffff;
+}
+
+.wrapper {
+	background: white;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	-webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-wrapper {
+	margin: 0;
+}
+
+.sidebar-wrapper {
+	margin: 0;
+	padding: 0;
+	background: #49925A;
+	color: #ffffff;
+}
+
+.profile-container {
+	padding: 30px;
+	text-align: center;
+}
+
+.sidebar-wrapper .name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.sidebar-wrapper .title {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.contact-container {
+	background: #5BB670;
+	padding: 30px;
+}
+
+.contact-container .contact-list {
+	padding: 0;
+	margin: auto;
+    list-style: none;
+}
+
+.contact-container .contact-list li {
+	margin-bottom: 10px;
+}
+	
+.icon-envelope:before {
+	content: "\f0e0";
+}
+
+.icon-phone:before {
+	content: "\f095";
+}
+
+.icon-linkedin:before {
+	content: "\f0e1";
+}
+
+.icon-github:before {
+	content: "\f09b";
+}
