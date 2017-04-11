@@ -21,6 +21,15 @@ a, a:hover, a:focus, a:visited {
     margin-top: -60px;
 }
 
+/* Navbar styling */
+.navbar-nav a {
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
 /* Define main content areas */
 .wrapper {
 	background: #FFFFFF;
@@ -40,6 +49,13 @@ a, a:hover, a:focus, a:visited {
 	color: #FFFFFF;
 	/* Fix bootstrap column height fill issue */
 	padding-bottom: 100%;
+}
+
+
+@media (max-width: 768px) {
+	.sidebar-wrapper {
+		padding-bottom: 30px;
+	}
 }
 
 .main-wrapper {
@@ -64,9 +80,18 @@ a, a:hover, a:focus, a:visited {
 	text-align: center;
 }
 
-.contact-container {
+.profile-pic {
+	height: 150px;
+	width: 150px;
+	border: 2px solid #999999;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.contact-container, .education-container {
 	background: #5BB670;
-	padding: 30px;
+	padding: 30px 30px 0px 30px;
 }
 
 .contact-container .contact-list {
@@ -81,6 +106,21 @@ a, a:hover, a:focus, a:visited {
 
 .contact-container .contact-list li {
 	margin-bottom: 10px;
+}
+
+.container-block-title {
+	font-size: 16px;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.degree, .degree-concentration, .degree-school, .degree-time {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.degree-concentration, .degree-school, .degree-time{
+	color: #666666;
 }
 
 /* Main content */
@@ -110,6 +150,14 @@ a, a:hover, a:focus, a:visited {
 	font-size: 16px;
 }
 
+.download-button {
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
 .download-button:hover, .download-button:focus {
 	color: #888888;
 	cursor: pointer;
@@ -133,6 +181,7 @@ a, a:hover, a:focus, a:visited {
 .job {
 	margin-bottom: 30px;
 }
+
 .job .job-title {
 	font-size: 18px;
 	color: #3F4650;
@@ -158,4 +207,9 @@ a, a:hover, a:focus, a:visited {
 
 .job .job-description {
 	font-size: 14px;
+}
+
+.job ul {
+	margin: 0;
+	padding-left: 18px;
 }

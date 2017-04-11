@@ -17,7 +17,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
 		
 		<!-- Page-specific styling -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 		
 		<!-- Mobile/tablet scaling -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,14 +36,14 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span> 
 					</button>
-					<img class="logo" src="assets/logo.png">
+					<img class="logo" src="assets/images/logo.png">
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#top">Profile</a></li>
-						<li><a href="#experience">Experience</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#projects">Projects</a></li>
+						<li id="profile-tab"><a href="#top">Profile</a></li>
+						<li id="experience-tab"><a href="#experience">Experience</a></li>
+						<li id="skills-tab"><a href="#skills">Skills</a></li>
+						<li id="projects-tab"><a href="#projects">Projects</a></li>
 					</ul>
 				</div>
 			</div>
@@ -55,9 +55,9 @@
 			<!-- Sidebar Content -->
 			<div class="col-sm-4 sidebar-wrapper ">
 				<div class="profile-container">
-					<img class="profile-pic" src="assets/profile.png">
+					<img class="profile-pic" src="assets/images/profile.png">
 					<h1 class="name">Emmett Lam</h1>
-					<h3 class="title">Embedded Software Engineer</h3>
+					<h3 class="title">Software Engineer</h3>
 				</div>
 				<div class="contact-container">
 					<ul class="contact-list">
@@ -83,6 +83,15 @@
 						</li>
 					</ul>
 				</div>
+				<div class="education-container">
+					<div class="container-block-title">EDUCATION</div>
+					<div class="education-item">
+						<div class="degree">BS in Electrical Engineering</div>
+						<div class="degree-concentration">Embedded Software Systems</div>
+						<div class="degree-school">University of Washington</div>
+						<div class="degree-time">2011-2015</div>
+					</div>
+				</div>
 			</div>
 			
 			<!-- Main column content -->
@@ -91,7 +100,7 @@
 					<span class="download-text">PDF</span>
 					<i class="fa fa-file-text-o"></i>
 				</div>
-				<div class="section">
+				<div class="section" id="profile">
 					<div class="section-title">
 						<i class="fa fa-user"></i>PROFILE
 					</div>
@@ -104,12 +113,12 @@
 						<i class="fa fa-briefcase"></i>EXPERIENCE
 					</div>
 					<div class="job">
-						<div class="job-title">Embedded Software Engineer
+						<div class="job-title">Software Engineer I
 							<div class="job-time">Feb 2016 - Present</div>
 						</div>
 						<div class="job-company">Crane Aerospace & Electronics</div>
 						<div class="job-description">
-							<p>Transitioned from Systems intern to Software team as a full-time embedded software engineer. Working on the Airbus A330 tire pressure indication system. I joined the team at the beginning of a product cycle, completing all three development stages.</p>
+							<p>Full-time embedded software engineer working on the Airbus A330 tire pressure indication system. I joined the team at the beginning of a product cycle, completing all three development stages.</p>
 							<p>
 								<strong>Stage 1:</strong> Engage with customer to design and reiterate the software requirements to be satisfied by the product (IBM Rational DOORS)<br>
 								<strong>Stage 2:</strong> Develop the safety-critical (DAL B) production software (C, assembly)<br>
@@ -125,13 +134,12 @@
 						<div class="job-company">Crane Aerospace & Electronics</div>
 						<div class="job-description">
 							<p>12-week summer internship program where I interned on the Systems Engineering team of Crane Aerospace & Electronics, a mid-sized OEM airplane parts supplier located in Lynnwood, WA.</p>
-
-							<p>
-								- Performed verification tests of the door sensing system to be deployed on the COMAC C919 commercial aircraft<br>
-								- Documented overall system requirements and designed test procedures to verify these were met<br>
-								- Worked on Visual Basic tools which communicated with LabVIEW tools on development units to examine input and output signals<br>
-								- Produced tool documentation to qualify the VBA tools according to FAA industry standards. Documented tool requirements and test procedures performed
-							</p>
+							<ul class="fa-ul">
+								<li><i class="fa-li fa fa-caret-right"></i>Performed verification tests of the door sensing system to be deployed on the COMAC C919 commercial aircraft</li>
+								<li><i class="fa-li fa fa-caret-right"></i>Documented overall system requirements and designed test procedures to verify these were met</li>
+								<li><i class="fa-li fa fa-caret-right"></i>Worked on Visual Basic tools which communicated with LabVIEW tools on development units to examine input and output signals</li>
+								<li><i class="fa-li fa fa-caret-right"></i>Produced tool documentation to qualify the VBA tools according to FAA industry standards. Documented tool requirements and test procedures performed</li>
+							</ul>
 						</div>
 					</div>
 					<div class="job">
@@ -141,12 +149,12 @@
 						<div class="job-company">Faithlife / Logos Bible SOftware</div>
 						<div class="job-description">
 							<p>12 week summer internship program where I interned on the HTML interactive tools team at Faithlife, a mid-sized educational software company located in Bellingham, WA.</p>
-							<p>
-								- Developed five interactive web-applications for integration with the Logos 6 platform<br>
-								- Participated in Agile Software Development, including sprints, scrums, daily standups, etc<br>
-								- Mentorship program and performed weekly code review and demonstrations<br>
-								<strong>Technologies:</strong> JavaScript, CSS/Less, jQuery, D3, Handlebars.js, Grunt, Bower, Node.js
-							</p>
+							<ul class="fa-ul">
+								<li><i class="fa-li fa fa-caret-right"></i>Developed five interactive web-applications for integration with the Logos 6 platform</li>
+								<li><i class="fa-li fa fa-caret-right"></i>Participated in Agile Software Development, including sprints, scrums, daily standups, etc</li>
+								<li><i class="fa-li fa fa-caret-right"></i>Mentorship program and performed weekly code review and demonstrations</li>
+								<li><i class="fa-li fa fa-caret-right"></i><strong>Technologies:</strong> JavaScript, CSS/Less, jQuery, D3, Handlebars.js, Grunt, Bower, Node.js</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -172,13 +180,8 @@
 		<!-- jQuery files -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		
-		<!-- Navbar active toggle handler -->
-		<script type="text/javascript">
-			$(".nav a").on("click", function(){
-				$(".nav").find(".active").removeClass("active");
-				$(this).parent().addClass("active");
-				});		 
-		</script>
+		<!-- Page-specific dynamics -->
+		<script type="text/javascript" src="assets/js/main.js">
 		
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
