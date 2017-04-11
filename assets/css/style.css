@@ -205,6 +205,11 @@ a, a:hover, a:focus, a:visited {
 	margin-bottom: 10px;
 }
 
+.job .job-logo {
+	margin-left: 15px;
+	height: 30px;
+}
+
 .job .job-description {
 	font-size: 14px;
 }
