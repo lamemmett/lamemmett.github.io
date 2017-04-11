@@ -48,27 +48,12 @@ a, a:hover, a:focus, a:visited {
 	background: #5BB670;
 	color: #FFFFFF;
 	/* Fix bootstrap column height fill issue */
-	padding-bottom: 100%;
+	padding-bottom: 125%;
 }
 
 .main-wrapper {
 	margin: 0;
 	padding: 60px;
-}
-
-/* Scaling for small screens */
-@media (max-width: 767px) {
-	.main-wrapper {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.sidebar-wrapper {
-		padding-bottom: 30px;
-	}
-	
-	.job .job-logo {
-		display: none;
-	}
 }
 
 /* Sidebar content */
@@ -198,8 +183,8 @@ a, a:hover, a:focus, a:visited {
 
 .job-title .job-time {
 	color: #97AAC3;
-	font-weight: 400;
-	font-size: 18px;
+	font-weight: 500;
+	font-size: 16px;
 	float: right;
 	position: relative;
 	right: 0;
@@ -225,4 +210,27 @@ a, a:hover, a:focus, a:visited {
 .job ul {
 	margin: 0;
 	padding-left: 18px;
+}
+
+/* Scaling for small screens */
+@media (max-width: 991px) {
+	.main-wrapper {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.job .job-time {
+		float: none;
+		position: static;
+		margin-bottom: -2px;
+	}
+}
+
+@media (max-width: 767px) {
+	.main-wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.sidebar-wrapper {
+		padding-bottom: 30px;
+	}
 }
