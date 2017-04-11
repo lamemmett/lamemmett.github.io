@@ -51,16 +51,20 @@ a, a:hover, a:focus, a:visited {
 	padding-bottom: 100%;
 }
 
-
-@media (max-width: 768px) {
-	.sidebar-wrapper {
-		padding-bottom: 30px;
-	}
-}
-
 .main-wrapper {
 	margin: 0;
 	padding: 60px;
+}
+
+/* Scaling for small screens */
+@media (max-width: 767px) {
+	.sidebar-wrapper {
+		padding-bottom: 30px;
+	}
+	
+	.job .job-logo {
+		display: none;
+	}
 }
 
 /* Sidebar content */
