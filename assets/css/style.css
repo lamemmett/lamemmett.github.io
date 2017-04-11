@@ -58,6 +58,10 @@ a, a:hover, a:focus, a:visited {
 
 /* Scaling for small screens */
 @media (max-width: 767px) {
+	.main-wrapper {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	.sidebar-wrapper {
 		padding-bottom: 30px;
 	}
