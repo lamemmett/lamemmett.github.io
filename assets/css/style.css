@@ -48,7 +48,7 @@ a, a:hover, a:focus, a:visited {
 	background: #5BB670;
 	color: #FFFFFF;
 	/* Fix bootstrap column height fill issue */
-	padding-bottom: 125%;
+	padding-bottom: 110%;
 }
 
 .main-wrapper {
@@ -179,6 +179,7 @@ a, a:hover, a:focus, a:visited {
 	font-size: 18px;
 	color: #3F4650;
 	font-weight: 500;
+	white-space: nowrap;
 }
 
 .job-title .job-time {
