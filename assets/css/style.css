@@ -6,6 +6,14 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+nav {
+	/* Fade in effects */
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+	opacity: 0;
+}
+
 .logo {
 	margin-right: 30px;
 }
@@ -25,8 +33,6 @@ a, a:hover, a:focus, a:visited {
 .navbar-nav a {
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
@@ -39,6 +45,12 @@ a, a:hover, a:focus, a:visited {
 	-webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
 	box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
+	
+	/* Fade in effects */
+	-webkit-transition: opacity .75s ease-in-out;
+	-moz-transition: opacity .75s ease-in-out;
+	transition: opacity .75s ease-in-out;
+	opacity: 0;
 }
 
 .sidebar-wrapper {
@@ -47,6 +59,7 @@ a, a:hover, a:focus, a:visited {
 	padding: 0;
 	background: #5BB670;
 	color: #FFFFFF;
+	
 	/* Fix bootstrap column height fill issue */
 	padding-bottom: 110%;
 }
@@ -74,8 +87,6 @@ a, a:hover, a:focus, a:visited {
 }
 
 .profile-pic {
-	height: 150px;
-	width: 150px;
 	border: 2px solid #999999;
 	-webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -117,6 +128,34 @@ a, a:hover, a:focus, a:visited {
 }
 
 /* Main content */
+.download-button {
+	padding-top: 10px;
+	padding-right: 15px;
+	position: absolute;
+	color: #AAAAAA;
+	top: 0;
+	right: 0;
+	font-size: 30px;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+.download-button .fa {
+	vertical-align: middle;
+}
+
+.download-text {
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+.download-button:hover, .download-button:focus {
+	color: #888888;
+	cursor: pointer;
+}
+
+/* Section title styling */
 .section {
 	margin-bottom: 20px;
 }
@@ -126,34 +165,6 @@ a, a:hover, a:focus, a:visited {
 	font-size: 20px;
 	font-weight: 500;
 	margin-bottom: 15px;
-}
-
-.main-wrapper .download-button {
-	padding-top: 10px;
-	padding-right: 15px;
-	position: absolute;
-	color: #AAAAAA;
-	top: 0;
-	right: 0;
-	font-size: 30px;
-}
-
-.download-text {
-	vertical-align: middle;
-	font-size: 16px;
-}
-
-.download-button {
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
-}
-
-.download-button:hover, .download-button:focus {
-	color: #888888;
-	cursor: pointer;
 }
 
 .main-wrapper .section-title .fa {
@@ -168,6 +179,12 @@ a, a:hover, a:focus, a:visited {
 	font-size: 16px;
 	color: #FFFFFF;
 	background: #49925A;
+}
+
+/* Profile summary */
+.profile-summary {
+	margin-bottom: 30px;
+	text-align: justify;
 }
 
 /* Job descriptions */
@@ -228,10 +245,17 @@ a, a:hover, a:focus, a:visited {
 
 @media (max-width: 767px) {
 	.main-wrapper {
+		padding-top: 40px;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 	.sidebar-wrapper {
 		padding-bottom: 30px;
+	}
+	.download-button {
+		font-size: 24px;
+	}
+	.download-text {
+		font-size: 14px;
 	}
 }

@@ -1,25 +1,7 @@
 $(document).ready(function(){
 	
-	/*
-	// Navbar toggle active state on click
-	$(".nav a").on("click", function(){
-		$(".nav").find(".active").removeClass("active");
-		$(this).parent().addClass("active");
-	});	
-	
-	// Navbar toggle active state on scroll
-	$(document).scroll(function () {
-		$("#profile-tab").removeClass('active');
-		$("#experience-tab").removeClass('active');
-		$("#skills-tab").removeClass('active');
-		$("#projects-tab").removeClass('active');
-		
-		$("#profile-tab").toggleClass('active', $(this).scrollTop() < $("#experience").offset().top);
-		$("#experience-tab").toggleClass('active', $(this).scrollTop() >= $("#experience").offset().top);
-		$("#skills-tab").toggleClass('active', $(this).scrollTop() > $("#skills").offset().top);
-		$("#projects-tab").toggleClass('active', $(this).scrollTop() > $("#projects").offset().top);
-	});
-	*/
+	/* Page fade-in */
+	$(".wrapper, nav").css("opacity", 1);
 	
 	// Add smooth scrolling to all links
 	$("a").on('click', function(event) {
