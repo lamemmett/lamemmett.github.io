@@ -87,7 +87,9 @@ a, a:hover, a:focus, a:visited {
 }
 
 .profile-pic {
-	border: 2px solid #999999;
+	height: 150px;
+	width: 150px;
+	border: 2px solid #888888;
 	-webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -160,6 +162,10 @@ a, a:hover, a:focus, a:visited {
 	margin-bottom: 20px;
 }
 
+.section:last-child {
+	margin-top: 30px;
+}
+
 .section-title {
 	color: #49925A;
 	font-size: 20px;
@@ -183,13 +189,12 @@ a, a:hover, a:focus, a:visited {
 
 /* Profile summary */
 .profile-summary {
-	margin-bottom: 30px;
 	text-align: justify;
 }
 
 /* Job descriptions */
 .job {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .job .job-title {
@@ -228,6 +233,33 @@ a, a:hover, a:focus, a:visited {
 .job ul {
 	margin: 0;
 	padding-left: 18px;
+}
+
+/* Skills section */
+.skill {
+	margin-bottom: 15px;
+}
+
+.skill-name {
+	color: #3F4650;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.skill-bar {
+	background: #EEEEEE;
+	height: 12px;
+	width: 100%;
+}
+
+.skill-bar-inner {
+	background: #8BE6A0;
+	height: 12px;
+	width: 0;
+	-webkit-transition: width 1s ease-in-out;
+	-moz-transition: width 1s ease-in-out;
+	transition: width 1s ease-in-out;
 }
 
 /* Scaling for small screens */

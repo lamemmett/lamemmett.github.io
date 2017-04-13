@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	/* Page fade-in */
+	// Page fade-in
 	$(".wrapper, nav").css("opacity", 1);
 	
 	// Add smooth scrolling to all links
@@ -23,5 +23,10 @@ $(document).ready(function(){
 			window.location.hash = hash;
 		  });
 		}
+	});
+	
+	// Fill in skills bars
+	$(".skill-bar-inner").each(function() {
+		$(this).css("width", $(this).data("width"));
 	});
 });
