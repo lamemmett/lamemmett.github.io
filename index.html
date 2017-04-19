@@ -16,6 +16,10 @@
 		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
 		
+		<!-- Remodal files -->
+		<link rel="stylesheet" href="node_modules/remodal/dist/remodal.css">
+		<link rel="stylesheet" href="node_modules/remodal/dist/remodal-default-theme.css">
+
 		<!-- Page-specific styling -->
 		<link rel="stylesheet" href="assets/css/style.css">
 		
@@ -26,230 +30,250 @@
 	</head>
 
 	<body>
-		<a class="hidden-anchor" id="top"></a>
+		<div class="remodal-bg">
+			<a class="hidden-anchor" id="top"></a>
 
-		<!-- Navbar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span> 
-					</button>
-					<a href="#top"><img class="logo" src="assets/images/logo.png"></a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li id="profile-tab"><a href="#profile">Profile</a></li>
-						<li id="experience-tab"><a href="#experience">Experience</a></li>
-						<li id="skills-tab"><a href="#skills">Skills</a></li>
-						<li id="projects-tab"><a href="#projects">Projects</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		
-		<!-- Main content wrapper -->
-		<div class="container wrapper">
-		
-			<!-- Sidebar Content -->
-			<div class="col-sm-4 sidebar-wrapper ">
-				<div class="profile-container">
-					<img class="profile-pic" src="assets/images/profile.png">
-					<h1 class="name">Emmett Lam</h1>
-					<h3 class="title">Software Engineer</h3>
-				</div>
-				<div class="contact-container">
-					<ul class="contact-list">
-						<li>
-							<i class="fa fa-envelope"></i>
-							<a href="mailto:lam.emmett@gmail.com">lam.emmett@gmail.com</a>
-						</li>
-						<li>
-							<i class="fa fa-phone"></i>
-							<a href="tel:14252867699">(425) 286-7699</a>
-						</li>
-						<li>
-							<i class="fa fa-linkedin"></i>
-							<a href="https://www.linkedin.com/in/emmettlam/">linkedin.com/in/emmettlam</a>
-						</li>
-						<li>
-							<i class="fa fa-github"></i>
-							<a href="https://github.com/lamemmett">github.com/lamemmett</a>
-						</li>
-						<li>
-							<i class="fa fa-facebook-square"></i>
-							<a href="https://www.facebook.com/emmett.lam.7">facebook.com/emmett.lam.7</a>
-						</li>
-					</ul>
-				</div>
-				<div class="education-container">
-					<div class="container-block-title">EDUCATION</div>
-					<div class="education-item">
-						<div class="degree">BS in Electrical Engineering</div>
-						<div class="degree-concentration">Embedded Software Systems</div>
-						<div class="degree-school">University of Washington</div>
-						<div class="degree-time">2011-2015</div>
+			<!-- Navbar -->
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a href="#top"><img class="logo" src="assets/images/logo.png"></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li id="profile-tab"><a href="#profile">Profile</a></li>
+							<li id="experience-tab"><a href="#experience">Experience</a></li>
+							<li id="skills-tab"><a href="#skills">Skills</a></li>
+							<li id="projects-tab"><a href="#projects">Projects</a></li>
+						</ul>
 					</div>
 				</div>
-			</div>
+			</nav>
 			
-			<!-- Main column content -->
-			<div class="col-sm-8 main-wrapper">
-				<div class="download-button">
-					<span class="download-text">PDF</span>
-					<i class="fa fa-file-text-o"></i>
-				</div>
-				<div class="section">
-					<a class="hidden-anchor" id="profile"></a>
-					<div class="section-title">
-						<i class="fa fa-user"></i>PROFILE
+			<!-- Main content wrapper -->
+			<div class="container wrapper">
+			
+				<!-- Sidebar Content -->
+				<div class="col-sm-4 sidebar-wrapper ">
+					<div class="profile-container">
+						<img class="profile-pic" src="assets/images/profile.png">
+						<h1 class="name">Emmett Lam</h1>
+						<h3 class="title">Software Engineer</h3>
 					</div>
-					<div class="profile-summary">
-						<p>Hi, my name is Emmett Lam. I am an aspiring front-end (and eventually full-stack) web developer hoping to transition out of the aerospace industry.</p>
-						<p>
-							Born and raised in the Pacific Northwest, I am a B.S. graduate of Electrical Engineering at the University of Washington with a focus in computing systems.
-							At my current job, I develop the code driving sensing systems on airplanes like the Boeing 737 and the Airbus A330.
-						</p>
-						<p>My purpose with this page is to jumpstart my interests and abilities in web development while also demonstrating my ability to create clean and interactive web interfaces.</p>
+					<div class="contact-container">
+						<ul class="contact-list">
+							<li>
+								<i class="fa fa-envelope"></i>
+								<a href="mailto:lam.emmett@gmail.com">lam.emmett@gmail.com</a>
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>
+								<a href="tel:14252867699">(425) 286-7699</a>
+							</li>
+							<li>
+								<i class="fa fa-linkedin"></i>
+								<a href="https://www.linkedin.com/in/emmettlam/">linkedin.com/in/emmettlam</a>
+							</li>
+							<li>
+								<i class="fa fa-github"></i>
+								<a href="https://github.com/lamemmett">github.com/lamemmett</a>
+							</li>
+							<li>
+								<i class="fa fa-facebook-square"></i>
+								<a href="https://www.facebook.com/emmett.lam.7">facebook.com/emmett.lam.7</a>
+							</li>
+						</ul>
 					</div>
-				</div>
-				
-				
-				<div class="section">
-					<a class="hidden-anchor" id="experience"></a>
-					<div  class="section-title">
-						<i class="fa fa-briefcase"></i>EXPERIENCE
-					</div>
-					<div class="job">
-						<div class="job-title">Software Engineer I
-							<img class="job-logo" src="assets/images/crane_logo.png"></img>
-							<div class="job-time">Feb 2016 - Present</div>
+					<div class="education-container">
+						<div class="container-block-title">EDUCATION</div>
+						<div class="education-item">
+							<div class="degree">BS in Electrical Engineering</div>
+							<div class="degree-concentration">Embedded Software Systems</div>
+							<div class="degree-school">University of Washington</div>
+							<div class="degree-time">2011-2015</div>
 						</div>
-						<div class="job-company">Crane Aerospace & Electronics</div>
-						<div class="job-description">
-							<p>Full-time embedded software engineer working on the Airbus A330 tire pressure indication system. I joined the team at the beginning of a product cycle, completing all three development stages.</p>
+					</div>
+				</div>
+				
+				<!-- Main column content -->
+				<div class="col-sm-8 main-wrapper">
+					<div class="download-button">
+						<span class="download-text">PDF</span>
+						<i class="fa fa-file-text-o"></i>
+					</div>
+					<div class="section">
+						<a class="hidden-anchor" id="profile"></a>
+						<div class="section-title">
+							<i class="fa fa-user"></i>PROFILE
+						</div>
+						<div class="profile-summary">
+							<p>Hi, my name is Emmett Lam. I am an aspiring front-end (and eventually full-stack) web developer hoping to transition out of the aerospace industry.</p>
 							<p>
-								<strong>Stage 1:</strong> Engage with customer to design and reiterate the software requirements to be satisfied by the product (IBM Rational DOORS)<br>
-								<strong>Stage 2:</strong> Develop the safety-critical (DAL B) production software (C, assembly)<br>
-								<strong>Stage 3:</strong> Develop system verification test scripts (C++) and run them against a target hardware simulator<br>
-								<strong>Interim:</strong> Perform internal design reviews between each stage
+								Born and raised in the Pacific Northwest, I am a B.S. graduate of Electrical Engineering at the University of Washington with a focus in computing systems.
+								At my current job, I develop the code driving sensing systems on airplanes like the Boeing 737 and the Airbus A330.
 							</p>
+							<p>My purpose with this page is to jumpstart my interests and abilities in web development while also demonstrating my ability to create clean and interactive web interfaces.</p>
 						</div>
 					</div>
-					<div class="job">
-						<div class="job-title">Systems Engineering Intern
-							<img class="job-logo" src="assets/images/crane_logo.png"></img>
-							<div class="job-time">Jun 2015 - Sep 2015</div>
+					
+					
+					<div class="section">
+						<a class="hidden-anchor" id="experience"></a>
+						<div  class="section-title">
+							<i class="fa fa-briefcase"></i>EXPERIENCE
 						</div>
-						<div class="job-company">Crane Aerospace & Electronics</div>
-						<div class="job-description">
-							<p>12-week summer internship program where I interned on the Systems Engineering team of Crane Aerospace & Electronics, a mid-sized OEM airplane parts supplier located in Lynnwood, WA.</p>
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-caret-right"></i>Performed verification tests of the door sensing system to be deployed on the COMAC C919 commercial aircraft</li>
-								<li><i class="fa-li fa fa-caret-right"></i>Documented overall system requirements and designed test procedures to verify these were met</li>
-								<li><i class="fa-li fa fa-caret-right"></i>Worked on Visual Basic tools which communicated with LabVIEW tools on development units to examine input and output signals</li>
-								<li><i class="fa-li fa fa-caret-right"></i>Produced tool documentation to qualify the VBA tools according to FAA industry standards. Documented tool requirements and test procedures performed</li>
-							</ul>
+						<div class="job">
+							<div class="job-title">Software Engineer I
+								<img class="job-logo" src="assets/images/crane_logo.png"></img>
+								<div class="job-time">Feb 2016 - Present</div>
+							</div>
+							<div class="job-company">Crane Aerospace & Electronics</div>
+							<div class="job-description">
+								<p>Full-time embedded software engineer working on the Airbus A330 tire pressure indication system. I joined the team at the beginning of a product cycle, completing all three development stages.</p>
+								<p>
+									<strong>Stage 1:</strong> Engage with customer to design and reiterate the software requirements to be satisfied by the product (IBM Rational DOORS)<br>
+									<strong>Stage 2:</strong> Develop the safety-critical (DAL B) production software (C, assembly)<br>
+									<strong>Stage 3:</strong> Develop system verification test scripts (C++) and run them against a target hardware simulator<br>
+									<strong>Interim:</strong> Perform internal design reviews between each stage
+								</p>
+							</div>
 						</div>
-					</div>
-					<div class="job">
-						<div class="job-title">Web Development Intern
-							<img class="job-logo" src="assets/images/logos_logo.png">
-							<div class="job-time">Jun 2014 - Sep 2014</div>
+						<div class="job">
+							<div class="job-title">Systems Engineering Intern
+								<img class="job-logo" src="assets/images/crane_logo.png"></img>
+								<div class="job-time">Jun 2015 - Sep 2015</div>
+							</div>
+							<div class="job-company">Crane Aerospace & Electronics</div>
+							<div class="job-description">
+								<p>12-week summer internship program where I interned on the Systems Engineering team of Crane Aerospace & Electronics, a mid-sized OEM airplane parts supplier located in Lynnwood, WA.</p>
+								<ul class="fa-ul">
+									<li><i class="fa-li fa fa-caret-right"></i>Performed verification tests of the door sensing system to be deployed on the COMAC C919 commercial aircraft</li>
+									<li><i class="fa-li fa fa-caret-right"></i>Documented overall system requirements and designed test procedures to verify these were met</li>
+									<li><i class="fa-li fa fa-caret-right"></i>Worked on Visual Basic tools which communicated with LabVIEW tools on development units to examine input and output signals</li>
+									<li><i class="fa-li fa fa-caret-right"></i>Produced tool documentation to qualify the VBA tools according to FAA industry standards. Documented tool requirements and test procedures performed</li>
+								</ul>
+							</div>
 						</div>
-						<div class="job-company">Faithlife / Logos Bible Software</img></div>
-						<div class="job-description">
-							<p>12 week summer internship program where I interned on the HTML interactive tools team at Faithlife, a mid-sized educational software company located in Bellingham, WA.</p>
-							<ul class="fa-ul">
-								<li><i class="fa-li fa fa-caret-right"></i>Developed five interactive web-applications for integration with the Logos 6 platform</li>
-								<li><i class="fa-li fa fa-caret-right"></i>Participated in Agile Software Development, including sprints, scrums, daily standups, etc</li>
-								<li><i class="fa-li fa fa-caret-right"></i>Mentorship program and performed weekly code review and demonstrations</li>
-								<li><i class="fa-li fa fa-caret-right"></i><strong>Technologies:</strong> JavaScript, CSS/Less, jQuery, D3, Handlebars.js, Grunt, Bower, Node.js</li>
-							</ul>
+						<div class="job">
+							<div class="job-title">Web Development Intern
+								<img class="job-logo" src="assets/images/logos_logo.png">
+								<div class="job-time">Jun 2014 - Sep 2014</div>
+							</div>
+							<div class="job-company">Faithlife / Logos Bible Software</img></div>
+							<div class="job-description">
+								<p>12 week summer internship program where I interned on the HTML interactive tools team at Faithlife, a mid-sized educational software company located in Bellingham, WA.</p>
+								<ul class="fa-ul">
+									<li><i class="fa-li fa fa-caret-right"></i>Developed five interactive web-applications for integration with the Logos 6 platform</li>
+									<li><i class="fa-li fa fa-caret-right"></i>Participated in Agile Software Development, including sprints, scrums, daily standups, etc</li>
+									<li><i class="fa-li fa fa-caret-right"></i>Mentorship program and performed weekly code review and demonstrations</li>
+									<li><i class="fa-li fa fa-caret-right"></i><strong>Technologies:</strong> JavaScript, CSS/Less, jQuery, D3, Handlebars.js, Grunt, Bower, Node.js</li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="job">
-						<div class="job-title">Software Mentor
-							<img class="job-logo" src="assets/images/first_logo.png"></img>
-							<div class="job-time">Sep 2011 - Dec 2013</div>
-						</div>
-						<div class="job-company">Washington FIRST Robotics</div>
-						<div class="job-description">
-							<p>Volunteer for the King's High School robotics team teaching introductory C programming to middle and high school students. Assist with the design and competition phases of the season.</p>
-						</div>
-					</div>
-				</div>
-				
-				
-				<div class="section">
-					<a class="hidden-anchor" id="skills"></a>
-					<div class="section-title">
-						<i class="fa fa-keyboard-o"></i>SKILLS
-					</div>
-					<div class="skill">
-						<div class="skill-name">Java, C & C++</div>
-						<div class="skill-bar">
-							<div class="skill-bar-inner" data-width="99%"></div>
-						</div>
-					</div>
-					<div class="skill">
-						<div class="skill-name">HTML & CSS/Less</div>
-						<div class="skill-bar">
-							<div class="skill-bar-inner" data-width="95%"></div>
-						</div>
-					</div>
-					<div class="skill">
-						<div class="skill-name">JavaScript & jQuery</div>
-						<div class="skill-bar">
-							<div class="skill-bar-inner" data-width="95%"></div>
+						<div class="job">
+							<div class="job-title">Software Mentor
+								<img class="job-logo" src="assets/images/first_logo.png"></img>
+								<div class="job-time">Sep 2011 - Dec 2013</div>
+							</div>
+							<div class="job-company">Washington FIRST Robotics</div>
+							<div class="job-description">
+								<p>Volunteer for the King's High School robotics team teaching introductory C programming to middle and high school students. Assist with the design and competition phases of the season.</p>
+							</div>
 						</div>
 					</div>
-					<div class="skill">
-						<div class="skill-name">Github & Grunt</div>
-						<div class="skill-bar">
-							<div class="skill-bar-inner" data-width="70%"></div>
+					
+					
+					<div class="section">
+						<a class="hidden-anchor" id="skills"></a>
+						<div class="section-title">
+							<i class="fa fa-keyboard-o"></i>SKILLS
+						</div>
+						<div class="skill">
+							<div class="skill-name">Java, C & C++</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="99%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill-name">HTML & CSS/Less</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="95%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill-name">JavaScript & jQuery</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="95%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill-name">Github & Grunt</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="70%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill-name">PHP</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="60%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill-name">Node.js & NPM</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="40%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill-name"><span style="text-decoration: line-through;">Photoshop</span> MS Paint (I'm AMAZING with Paint)</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="99%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="skill-name">Dank Memes</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="69%"></div>
+							</div>
 						</div>
 					</div>
-					<div class="skill">
-						<div class="skill-name">PHP</div>
-						<div class="skill-bar">
-							<div class="skill-bar-inner" data-width="60%"></div>
+					
+					
+					<div class="section">
+						<a class="hidden-anchor" id="projects"></a>
+						<div class="section-title">
+							<i class="fa fa-flask"></i>PROJECTS
 						</div>
-					</div>
-					<div class="skill">
-						<div class="skill-name">Node.js & NPM</div>
-						<div class="skill-bar">
-							<div class="skill-bar-inner" data-width="40%"></div>
+						<div class="project">Here's a list of some of the projects I've worked on!</div>
+						<div class="project">
+							<span class="project-name"><a href="#logos-modal">Logos Alphabet Tutor</a></span>
+							 - 
+							<span class="project-description">An interactive HTML tool that teaches users to read, write, and pronounce different alphabets. Designed for multiple device compatability (phone, tablet) and easy swapping-in of alphabet sets.</span>
 						</div>
-					</div>
-					<div class="skill">
-						<div class="skill-name"><span style="text-decoration: line-through;">Photoshop</span> MS Paint (I'm AMAZING with Paint)</div>
-						<div class="skill-bar">
-							<div class="skill-bar-inner" data-width="99%"></div>
-						</div>
-					</div>
-					<div class="skill">
-						<div class="skill-name">Dank Memes</div>
-						<div class="skill-bar">
-							<div class="skill-bar-inner" data-width="69%"></div>
-						</div>
-					</div>
-				</div>
-				
-				
-				<div class="section">
-					<a class="hidden-anchor" id="projects"></a>
-					<div class="section-title">
-						<i class="fa fa-flask"></i>PROJECTS
 					</div>
 				</div>
 			</div>
 		</div>
 		
+		<!-- Logos video popup -->
+		<div class="remodal" data-remodal-id="logos-modal">
+			<button data-remodal-action="close" class="remodal-close"></button>
+			<h1>Logos Greek Alphabet Tutor</h1><br>
+			<iframe width="90%" height="300" src="https://www.youtube.com/embed/Bot-Gd-fVnY" frameborder="0" allowfullscreen></iframe>
+			<br><br>
+			<button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+		</div>
+		
 		<!-- jQuery files -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- Remodal -->
+		<script type="text/javascript" src="node_modules/remodal/dist/remodal.min.js"></script>
 		
 		<!-- Page-specific dynamics -->
 		<script type="text/javascript" src="assets/js/main.js"></script>
