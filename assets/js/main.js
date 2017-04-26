@@ -25,8 +25,15 @@ $(document).ready(function(){
 		}
 	});
 	
-	// Fill in skills bars
-	$(".skill-bar-inner").each(function() {
-		$(this).css("width", $(this).data("width"));
+	$(window).scroll(function() {
+		var scrollPos = $(window).scrollTop();
+		var topofDiv = $("#skills").offset().top - ($("#skills").outerHeight() * .75);
+		
+		if (scrollPos > topofDiv) {
+			// Fill in skills bars
+			$(".skill-bar-inner").each(function() {
+				$(this).css("width", $(this).data("width"));
+			});
+		}
 	});
 });

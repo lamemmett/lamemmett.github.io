@@ -38,13 +38,14 @@ nav {
 
 /* Define main content areas */
 .wrapper {
+	position: relative;
 	background: #FFFFFF;
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0;
-	-webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
-	box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);
 	
 	/* Fade in effects */
 	-webkit-transition: opacity .75s ease-in-out;
@@ -54,19 +55,21 @@ nav {
 }
 
 .sidebar-wrapper {
+	position: absolute;
+	left: 0;
 	height: 100%;
+	width: 280px;
 	margin: 0;
 	padding: 0;
 	background: #5BB670;
 	color: #FFFFFF;
-	
-	/* Fix bootstrap column height fill issue */
-	padding-bottom: 110%;
+	padding-bottom: 30px;
 }
 
 .main-wrapper {
 	margin: 0;
 	padding: 60px;
+	padding-left: 340px;
 }
 
 /* Sidebar content */
@@ -227,7 +230,7 @@ nav {
 }
 
 .job .job-logo {
-	margin-left: 10px;
+	margin-left: 5px;
 	height: 30px;
 }
 
@@ -287,7 +290,7 @@ nav {
 /* Scaling for small screens */
 @media (max-width: 991px) {
 	.main-wrapper {
-		padding-left: 30px;
+		padding-left: 310px;
 		padding-right: 30px;
 	}
 	.job .job-time {
@@ -298,15 +301,18 @@ nav {
 }
 
 @media (max-width: 767px) {
+	.sidebar-wrapper {
+		position: static;
+		width: inherit;
+	}
 	.main-wrapper {
+		width: inherit;
 		padding-top: 40px;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.sidebar-wrapper {
-		padding-bottom: 30px;
-	}
 	.download-button {
+		color: #FFFFFF;
 		font-size: 24px;
 	}
 	.download-text {
