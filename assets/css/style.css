@@ -23,6 +23,10 @@ nav {
 	color: #FFFFFF;
 }
 
+a:visited {
+	color: inherit;
+}
+
 .hidden-anchor {
 	display: block;
     padding-top: 60px;
