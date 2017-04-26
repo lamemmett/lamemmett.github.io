@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	var skillsFilled = false;
 	
 	// Page fade-in
 	$(".wrapper, nav").css("opacity", 1);
@@ -25,7 +26,9 @@ $(document).ready(function(){
 		}
 	});
 	
-	$(window).scroll(function() {
+	
+	// Fill in skills bars if screen set there initially
+	(function() {
 		var scrollPos = $(window).scrollTop();
 		var topofDiv = $("#skills").offset().top - ($("#skills").outerHeight() * .75);
 		
@@ -34,6 +37,22 @@ $(document).ready(function(){
 			$(".skill-bar-inner").each(function() {
 				$(this).css("width", $(this).data("width"));
 			});
+		}
+	})();
+	
+	// Otherwise fill skill bars when scrolled to
+	$(window).scroll(function() {
+		if (!skillsFilled) {
+			var scrollPos = $(window).scrollTop();
+			var topofDiv = $("#skills").offset().top - ($("#skills").outerHeight() * .75);
+			
+			if (scrollPos > topofDiv) {
+				$(".skill-bar-inner").each(function() {
+					$(this).css("width", $(this).data("width"));
+				});
+				
+				skillsFilled = true;
+			}
 		}
 	});
 });
