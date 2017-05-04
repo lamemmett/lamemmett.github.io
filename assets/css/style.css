@@ -287,6 +287,12 @@ nav {
 	color: #49925A;
 }
 
+/* Modal windows */
+.remodal {
+	height: 90%;
+	width: 90%;
+}
+
 /* Scaling for small screens */
 @media (max-width: 991px) {
 	.main-wrapper {
