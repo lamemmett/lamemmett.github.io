@@ -18,6 +18,24 @@ body {
 	margin-right: auto;
 }
 
+.health-bar {
+	margin: auto;
+	margin-top: 4px;
+	height: 20px;
+	width: 90%;
+	border: 5px solid black;
+	border-radius: 25px;
+}
+
+.health-bar-fill {
+	height: inherit;
+	width: 100%;
+	border: 0px;
+	border-radius: 25px;
+	transition: width 1s ease-in-out;
+	background: linear-gradient(to right, red , yellow, green);
+}
+
 .controls-wrapper {
 	position: absolute;
 	top: 0;
@@ -26,6 +44,8 @@ body {
 }
 
 .arrow-column {
+	position: absolute;
+	top: 0;
 	float: left;
 	height: 100%;
 	width: 25%;
@@ -33,7 +53,7 @@ body {
 
 /* Arrow styling */
 .control-arrow {
-	margin-top: 4px;
+	margin-top: 44px;
 	height: 100%;
 	width: auto;
 	max-height: 100px;
