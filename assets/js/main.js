@@ -35,7 +35,7 @@ $(document).ready(function(){
 	});
 	
 	$(window).scroll(function() {
-		var scrollPos = $(window).scrollTop() + 61;
+		var scrollPos = $(window).scrollTop() + 71;
 		var topofDiv;
 		
 		// Fill skill bars when scrolled to
@@ -53,7 +53,7 @@ $(document).ready(function(){
 		
 		if (!isScrolling) {
 			if ( (scrollPos > $("#projects").offset().top) ||
-				 (scrollPos - 61 + $(window).height() > $(document).height())) {
+				 (scrollPos - 71 + $(window).height() > $("body").height())) {
 				$(".navbar-menu li").removeClass("active");
 				$("#projects-tab").addClass("active");
 			} else if (scrollPos > $("#skills").offset().top) {
