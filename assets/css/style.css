@@ -1,39 +1,58 @@
 body {
+	margin: 0;
 	background: #DDDDDD;
 	font-family: 'Roboto', sans-serif; 
-	margin-top: 50px;
 	padding-bottom: 50px;
 	-webkit-font-smoothing: antialiased;
 }
 
-nav {
-	/* Fade in effects */
-	-webkit-transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
-	opacity: 0;
-}
-
-.logo {
-	margin-right: 30px;
-}
-
 /* Remove default link styling */
-.sidebar-wrapper a {
-	color: #FFFFFF;
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
-.hidden-anchor {
-	display: block;
-    padding-top: 60px;
-    margin-top: -60px;
+.sidebar-wrapper a:hover {
+	text-decoration: underline;
+}
+
+.fa {
+	box-sizing: border-box;
 }
 
 /* Navbar styling */
-.navbar-nav a {
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+.navbar {
+	height: 50px;
+	width: 100%;
+	background: #FFFFFF;
+	position: fixed;
+	top: 0;
+	font-size: 16px;
+	border-bottom: 1px solid #CCCCCC;
+	text-align: center;
+	z-index: 999;
+}
+
+.navbar-menu {
+	height: inherit;
+	margin: 0;
+	display: inline-block;
+}
+
+.navbar-menu li:first-child {
+	margin-left: 0;
+}
+
+.navbar-menu li {
+	height: 35px;
+	padding-top: 12px;
+	color: black;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.navbar-menu li.active, .navbar-menu li:hover {
+	border-bottom: 3px solid #49925A;
 }
 
 /* Define main content areas */
@@ -41,7 +60,7 @@ nav {
 	position: relative;
 	background: #FFFFFF;
 	max-width: 1000px;
-	margin: 0 auto;
+	margin: 50px auto;
 	padding: 0;
 	-webkit-box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);
@@ -63,7 +82,6 @@ nav {
 	padding: 0;
 	background: #5BB670;
 	color: #FFFFFF;
-	padding-bottom: 30px;
 }
 
 .main-wrapper {
@@ -114,6 +132,7 @@ nav {
 }
 
 .contact-container .contact-list li {
+	font-size: 14px;
 	margin-bottom: 10px;
 }
 
@@ -133,11 +152,6 @@ nav {
 }
 
 /* Main content */
-.download-button a {
-	color: inherit;
-	text-decoration: none;
-}
-
 .download-button {
 	padding-top: 10px;
 	padding-right: 15px;
@@ -307,7 +321,15 @@ nav {
 }
 
 @media (max-width: 767px) {
+	.navbar {
+		display: none;
+	}
+	
+	.wrapper {
+		margin-top: 0;
+	}
 	.sidebar-wrapper {
+		padding-bottom: 30px;
 		position: static;
 		width: inherit;
 	}

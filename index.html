@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		
 		<!-- Fonts -->
 		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
@@ -24,31 +18,17 @@
 		<title>Emmett Lam</title>
 	</head>
 
-	<body>
+	<body id="top">
 		<div class="remodal-bg">
-			<a class="hidden-anchor" id="top"></a>
-
 			<!-- Navbar -->
-			<nav class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span> 
-						</button>
-						<a href="#top"><img class="logo" src="assets/images/logo.png"></a>
-					</div>
-					<div class="collapse navbar-collapse" id="myNavbar">
-						<ul class="nav navbar-nav">
-							<li id="profile-tab"><a href="#profile-anchor">Profile</a></li>
-							<li id="experience-tab"><a href="#experience-anchor">Experience</a></li>
-							<li id="skills-tab"><a href="#skills-anchor">Skills</a></li>
-							<li id="projects-tab"><a href="#projects-anchor">Projects</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+			<div class="navbar">
+				<ul class="navbar-menu">
+					<li class="active" id="profile-tab"><a href="#top">Profile</a></li>
+					<li id="experience-tab"><a href="#experience">Experience</a></li>
+					<li id="skills-tab"><a href="#skills">Skills</a></li>
+					<li id="projects-tab"><a href="#projects">Projects</a></li>
+				</ul>
+			</div>
 			
 			<!-- Main content wrapper -->
 			<div class="wrapper">
@@ -104,7 +84,6 @@
 						</a>
 					</div>
 					<div class="section" id="profile">
-						<a class="hidden-anchor" id="profile-anchor"></a>
 						<div class="section-title">
 							<i class="fa fa-user"></i>PROFILE
 						</div>
@@ -120,7 +99,6 @@
 					
 					
 					<div class="section" id="experience">
-						<a class="hidden-anchor" id="experience-anchor"></a>
 						<div  class="section-title">
 							<i class="fa fa-briefcase"></i>EXPERIENCE
 						</div>
@@ -186,7 +164,6 @@
 					
 					
 					<div class="section" id="skills">
-						<a class="hidden-anchor" id="skills-anchor"></a>
 						<div class="section-title">
 							<i class="fa fa-keyboard-o"></i>SKILLS
 						</div>
@@ -242,7 +219,6 @@
 					
 					
 					<div class="section" id="projects">
-						<a class="hidden-anchor" id="projects-anchor"></a>
 						<div class="section-title">
 							<i class="fa fa-flask"></i>PROJECTS
 						</div>
@@ -302,8 +278,5 @@
 		
 		<!-- Page-specific dynamics -->
 		<script type="text/javascript" src="assets/js/main.js"></script>
-		
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>
