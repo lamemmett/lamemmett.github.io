@@ -1,4 +1,10 @@
+/*	Emmett lam
+/	This JS file handles the animations for the landing page.
+*/
+
 $(document).ready(function(){
+	
+	// Various animation state flags
 	var skillsFilled = false;
 	var isScrolling = false;
 	
@@ -34,24 +40,35 @@ $(document).ready(function(){
 		}
 	});
 	
+	/* 	Window scroll behavior:
+	/		- Fill in skill bars when scrolled to
+	/		- Update navbar tab when section is scrolled to
+	*/
 	$(window).scroll(function() {
+		// Get current scroll position
 		var scrollPos = $(window).scrollTop() + 71;
 		var topofDiv;
 		
-		// Fill skill bars when scrolled to
+		// Fill in skills bars only once
 		if (!skillsFilled) {
-			topofDiv = $("#skills").offset().top - ($("#skills").outerHeight() * .75);
+			// Get position of skills section
+			topofDiv = $("#skills").offset().top - ($(window).outerHeight() * .75);
 			
+			// Fill in skill bars when section scrolled past
 			if (scrollPos > topofDiv) {
 				$(".skill-bar-inner").each(function() {
 					$(this).css("width", $(this).data("width"));
 				});
 				
+				// Prevent repeat animation
 				skillsFilled = true;
 			}
 		}
 		
+		// Disable selected tab updates while screen is being smooth-scrolled
 		if (!isScrolling) {
+			
+			// Select the active tab based on scroll position
 			if ( (scrollPos > $("#projects").offset().top) ||
 				 (scrollPos - 71 + $(window).height() > $("body").height())) {
 				$(".navbar-menu li").removeClass("active");
@@ -69,13 +86,12 @@ $(document).ready(function(){
 		}
 	});
 	
-	// Otherwise fill in skills bars if screen set there initially
+	// On window refresh, fill in skills bars if already scrolled to
 	(function() {
-		var scrollPos = $(window).scrollTop();
-		var topofDiv = $("#skills").offset().top - ($("#skills").outerHeight() * .75);
+		var scrollPos = $(window).scrollTop() + 71;
+		var topofDiv = $("#skills").offset().top - ($(window).outerHeight() * .75);
 		
 		if (scrollPos > topofDiv) {
-			// Fill in skills bars
 			$(".skill-bar-inner").each(function() {
 				$(this).css("width", $(this).data("width"));
 			});
