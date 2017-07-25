@@ -99,6 +99,7 @@ a {
 	margin: 0;
 	padding: 60px;
 	padding-left: 340px;
+	text-align: justify;
 }
 
 /* Sidebar content */
@@ -218,11 +219,6 @@ a {
 	font-size: 16px;
 	color: #FFFFFF;
 	background: #49925A;
-}
-
-/* Profile summary */
-.profile-summary {
-	text-align: justify;
 }
 
 /* Job descriptions */
