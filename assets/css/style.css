@@ -267,6 +267,10 @@ a {
 	margin-bottom: 15px;
 }
 
+.skill:last-child {
+	margin-bottom: 30px;
+}
+
 .skill-name {
 	color: #3F4650;
 	font-size: 18px;
