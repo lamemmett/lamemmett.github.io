@@ -5,7 +5,8 @@
 $(document).ready(function(){
 	
 	// Various animation state flags
-	var skillsFilled = false;
+	var embeddedSkillsFilled = false;
+	var webSkillsFilled = false;
 	var isScrolling = false;
 	
 	// Page fade-in
@@ -50,18 +51,34 @@ $(document).ready(function(){
 		var topofDiv;
 		
 		// Fill in skills bars only once
-		if (!skillsFilled) {
+		if (!embeddedSkillsFilled) {
 			// Get position of skills section
-			topofDiv = $("#skills").offset().top - ($(window).outerHeight() * .75);
+			topofDiv = $("#embedded-skills").offset().top - ($(window).outerHeight() * .75);
 			
 			// Fill in skill bars when section scrolled past
 			if (scrollPos > topofDiv) {
-				$(".skill-bar-inner").each(function() {
+				$("#web-skills .skill-bar-inner").each(function() {
 					$(this).css("width", $(this).data("width"));
 				});
 				
 				// Prevent repeat animation
-				skillsFilled = true;
+				embeddedSkillsFilled = true;
+			}
+		}
+		
+		// Fill in skills bars only once
+		if (!webSkillsFilled) {
+			// Get position of skills section
+			topofDiv = $("#web-skills").offset().top - ($(window).outerHeight() * .75);
+			
+			// Fill in skill bars when section scrolled past
+			if (scrollPos > topofDiv) {
+				$("#embedded-skills .skill-bar-inner").each(function() {
+					$(this).css("width", $(this).data("width"));
+				});
+				
+				// Prevent repeat animation
+				webSkillsFilled = true;
 			}
 		}
 		
@@ -73,9 +90,12 @@ $(document).ready(function(){
 				 (scrollPos - 71 + $(window).height() > $("body").height())) {
 				$(".navbar-menu li").removeClass("active");
 				$("#projects-tab").addClass("active");
-			} else if (scrollPos > $("#skills").offset().top) {
+			} else if (scrollPos > $("#web-skills").offset().top) {
 				$(".navbar-menu li").removeClass("active");
-				$("#skills-tab").addClass("active");
+				$("#web-skills-tab").addClass("active");
+			} else if (scrollPos > $("#embedded-skills").offset().top) {
+				$(".navbar-menu li").removeClass("active");
+				$("#embedded-skills-tab").addClass("active");
 			} else if (scrollPos > $("#experience").offset().top) {
 				$(".navbar-menu li").removeClass("active");
 				$("#experience-tab").addClass("active");
@@ -89,10 +109,18 @@ $(document).ready(function(){
 	// On window refresh, fill in skills bars if already scrolled to
 	(function() {
 		var scrollPos = $(window).scrollTop() + 71;
-		var topofDiv = $("#skills").offset().top - ($(window).outerHeight() * .75);
+		var topofDiv = $("#embedded-skills").offset().top - ($(window).outerHeight() * .75);
 		
 		if (scrollPos > topofDiv) {
-			$(".skill-bar-inner").each(function() {
+			$("#embedded-skills .skill-bar-inner").each(function() {
+				$(this).css("width", $(this).data("width"));
+			});
+		}
+		
+		topofDiv = $("#web-skills").offset().top - ($(window).outerHeight() * .75);
+		
+		if (scrollPos > topofDiv) {
+			$("#web-skills .skill-bar-inner").each(function() {
 				$(this).css("width", $(this).data("width"));
 			});
 		}

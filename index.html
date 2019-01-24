@@ -28,7 +28,8 @@
 				<ul class="navbar-menu">
 					<li class="active" id="profile-tab"><a href="#top">Profile</a></li>
 					<li id="experience-tab"><a href="#experience">Experience</a></li>
-					<li id="skills-tab"><a href="#skills">Skills</a></li>
+					<li id="embedded-skills-tab"><a href="#embedded-skills">Embedded</a></li>
+					<li id="web-skills-tab"><a href="#web-skills">Web</a></li>
 					<li id="projects-tab"><a href="#projects">Projects</a></li>
 				</ul>
 			</div>
@@ -95,7 +96,7 @@
 						
 						<div class="profile-summary">
 							<p>
-								Hi, my name is Emmett Lam. I am an aspiring front-end (and eventually full-stack) web developer looking to transition out of the aerospace industry
+								Hi, my name is Emmett Lam. I am an embedded software engineer and aspiring full-stack web developer looking to transition out of the aerospace industry.
 							</p>
 							<p>
 								Born and raised in the Pacific Northwest, I am a B.S. graduate of Electrical Engineering at the University of Washington with a focus in computing systems.
@@ -228,24 +229,59 @@
 						</div>
 					</div>
 					
-					<!-- SKILLS SECTION -->
-					<div class="section" id="skills">
+					<!-- EMBEDDED SKILLS SECTION -->
+					<div class="section" id="embedded-skills">
 						<div class="section-title">
-							<i class="fa fa-keyboard-o"></i>SKILLS
+							<i class="fa fa-keyboard-o"></i>EMBEDDED SKILLS
 						</div>
 						
 						<div class="skill">
-							<div class="skill-name">Java, C & C++</div>
+							<div class="skill-name">C, C++, Java</div>
 							<div class="skill-bar">
 								<div class="skill-bar-inner" data-width="99%"></div>
 							</div>
 						</div>
 						
 						<div class="skill">
-							<div class="skill-name">HTML & CSS/Less</div>
+							<div class="skill-name">Firmware design and development</div>
 							<div class="skill-bar">
-								<div class="skill-bar-inner" data-width="95%"></div>
+								<div class="skill-bar-inner" data-width="90%"></div>
 							</div>
+						</div>
+						
+						<div class="skill">
+							<div class="skill-name">Verilog/VHDL FPGA development</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="90%"></div>
+							</div>
+						</div>
+						
+						<div class="skill">
+							<div class="skill-name">Interrupts and real-time systems</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="80%"></div>
+							</div>
+						</div>
+						
+						<div class="skill">
+							<div class="skill-name">Common communication protocols (UART, SPI, I2C)</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="80%"></div>
+							</div>
+						</div>
+						
+						<div class="skill">
+							<div class="skill-name">PIC microcontrollers</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="75%"></div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- WEB SKILLS SECTION -->
+					<div class="section" id="web-skills">
+						<div class="section-title">
+							<i class="fa fa-globe"></i>WEB SKILLS
 						</div>
 						
 						<div class="skill">
@@ -256,9 +292,16 @@
 						</div>
 						
 						<div class="skill">
-							<div class="skill-name">AngularJS</div>
+							<div class="skill-name">ReactJS & AngularJS</div>
 							<div class="skill-bar">
 								<div class="skill-bar-inner" data-width="75%"></div>
+							</div>
+						</div>
+						
+						<div class="skill">
+							<div class="skill-name">HTML, CSS, PHP</div>
+							<div class="skill-bar">
+								<div class="skill-bar-inner" data-width="95%"></div>
 							</div>
 						</div>
 						
@@ -270,16 +313,9 @@
 						</div>
 						
 						<div class="skill">
-							<div class="skill-name">PHP</div>
-							<div class="skill-bar">
-								<div class="skill-bar-inner" data-width="60%"></div>
-							</div>
-						</div>
-						
-						<div class="skill">
 							<div class="skill-name">Node.js & NPM</div>
 							<div class="skill-bar">
-								<div class="skill-bar-inner" data-width="40%"></div>
+								<div class="skill-bar-inner" data-width="50%"></div>
 							</div>
 						</div>
 						
@@ -305,6 +341,19 @@
 						</div>
 						
 						<div class="project">Here's a list of some of the projects I've built!</div>
+						
+						<div class="project">
+							<span class="project-name"><a>Pipelined CPU</a></span>
+							 - 
+							<span class="project-description">Verilog hardware simulation of a single-threaded microprocessor based on the MIPS instruction set. Expanded upon to add a 5-stage instruction pipeline to improve throughput. Handles instruction fetch and encoding, basic CPU instructions (read/write registers, instruction branching, arithmetic operations).</span>
+						</div>
+						
+						<div class="project">
+							<span class="project-name"><a>Cache Memory System</a></span>
+							 - 
+							<span class="project-description">Research project to design a Verilog cache memory system with randomly generated cache levels and sizes. Implemented as a lab project for the UW microprocessors course curriculum.<span>
+						</div>
+						
 						<div class="project">
 							<span class="project-name"><a href="#logos-modal">Logos Alphabet Tutor</a></span>
 							 - 
